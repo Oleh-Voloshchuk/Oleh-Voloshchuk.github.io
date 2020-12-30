@@ -1,0 +1,379 @@
+body {
+	width: 100%;
+	height: 100vh;
+	margin: 0 0 0 0;
+	background: #4E536F;
+	
+}
+
+header {
+	height: 20vh;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.container {
+	height: 80vh;
+	width: 100%;
+	margin: 0 0 0 0;
+}
+.menu {
+	width: 100%;
+}
+
+.menu img {
+	margin-top: 3%;
+	margin-left: 5%;
+	float: left;
+}
+.menu ul  {
+	margin-top:2%;
+	display: flex;
+	list-style: none;
+	padding-left: 0;
+}
+
+.menu li {
+	position: relative;
+}
+
+.menu li > ul {
+	position: absolute; /*задаємо поцицію нащадка*/
+	top: 27px; /*відступ зверху від батьківського елементу*/
+	display: none; /*"ховаємо" наше підменю*/
+	
+}
+
+.menu li:hover > ul {
+	display: block;
+	width: 150px; /*Задаємо ширину випадаючого меню*/ 
+	text-align:center;
+	
+}
+.burger_links {
+	margin-top: 10px;	
+	margin-left: 50px;
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.txt {
+	margin: 3% 5%;
+}
+
+
+.about {
+	margin: 3% 5%;
+}
+
+.txt1,
+.txt2 {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: Poppins;
+	font-size: 120%;
+	line-height: 24px;
+	margin-left: 15%;
+	margin-right: 15%;
+	color: #FFFFFF;
+	
+	}
+	
+.txt1:hover {
+	border-bottom: 3px solid #FFAE00;
+	width: 11px;
+	padding-bottom: 5px;
+	color: #FFAE00;
+	cursor: pointer;
+}
+
+.txt2:hover {
+	padding-bottom: 5px;
+	color: #FFAE00;
+	cursor: pointer;
+}
+.txt2 {
+	margin-left: -40%;
+	margin-right: 0;
+	font-size: 100%;
+}
+	
+.iphone {
+	position:absolute;
+	left: 35%;
+	overflow:hidden;
+	height:80%;
+	bottom: 0;
+	top: 20vh;
+
+}
+.iphone img {
+		width:90%;
+}
+.main_txt {
+	top: 30%;
+	text-align: center;
+	position: absolute;
+	width: 25%;
+	height: 55%;
+	left: 10%;
+
+}
+.hh,
+.hhh {
+	font-family: Poppins;
+	margin-top: 0;
+	font-size: 350%;
+	font-style: normal;
+	color: #122A59;
+	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+	letter-spacing: 1px;
+	line-height: 60px;
+	font-weight: normal;
+
+}
+
+.hhh {
+	font-size: 370%;
+	color: #fff;
+	letter-spacing: 0.5px;
+	
+}
+
+.main_txt a {
+	padding: 2% 10% 2% 10%;	
+	margin-top: 0 auto;
+	text-decoration: none;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 5%;
+	color: #FFFFFF;
+	font-size: 200%;
+	background: #074787;
+	border-radius: 65.625px;
+	
+}
+
+.main_txt a:hover {
+	color: #FFAE00;
+}
+.buttons {
+	margin-top: 0;
+	height: 50%;
+	width: 25%;
+	margin-right: 3	%;
+	float: right;
+	text-align:center;
+}
+.buttons a {
+	width: 100%;
+	text-decoration: none;
+	color: #ffff;
+	font-size: 120%;
+	font-family: Poppins;
+	text-transform: uppercase;
+
+}
+
+.sign:hover {
+	border-bottom: 3px solid #FFAE00;
+	padding-bottom: 5px;
+
+}
+.buttons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.buttons img {
+	top: 11%;
+	height: 50%;
+	width: 50%;
+}
+
+
+@media screen and (max-device-width:767px) {
+
+	.container {
+		width:100%;
+		margin: 0 auto;
+
+	}
+	.iphone {
+		width:100%;
+		left:0;
+
+	}
+	.menu {
+		width:55%;
+	}
+	.menu img {
+		margin-top: 5%;
+		margin-left: 0;
+		float: right;
+		height: 100px;
+	}
+	.menu li > ul {
+		left: 100px;
+		top: 0; /*відступ зверху від батьківського елементу*/
+	}
+	.main_txt {
+		top: 20%;
+		left:30%;
+		height: 25%;
+		width:40%
+	}
+	.iphone img 
+	{
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 55%;
+		width:100%;
+	}
+	.txt1:hover {
+		border-bottom: 0;
+		padding: 1em;
+	}
+	.hh {
+		line-height: 80px;
+		font-size:80px;
+	}
+	
+	.hhh {
+		line-height: 80px;
+		font-size: 100px;
+	}
+	.main_txt a {
+		font-size: 60px;
+		margin-top: 30px;
+		
+	}
+	.burger_menu {
+		padding: 2em;
+		width: 2%;
+		margin: 2em;
+		margin-left: 20%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url(menu.svg);
+	}
+	.burger {
+		
+		display: flex;
+		flex-direction: row;
+		align-items:center;
+		
+	}
+	
+	.txt1 {
+		display: flex;	
+		width: 10em;
+		padding: 1em;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.buttons {
+		margin-top: 0%;
+		margin-right: 5%;
+	}
+	.burger_links {
+		display: none;
+	}
+
+	.burger_links_shown {
+		display: block;
+		margin-top: 35%;
+		z-index: 2;
+		box-shadow: 0 0 30px black;
+	}
+	.burger_opened {
+		padding: 2em;
+		padding-top: 3.2em;
+		width: 2%;
+		margin: 2em;
+		margin-left: 20%;;
+		background-image: url(hide.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.menu_hide img {
+		display: none
+	}
+
+}
+
+@media screen and (min-device-width:2550px){
+
+	.main_txt {
+		width: 40%;
+		left: 0;
+		height: 65%;
+	}
+	.iphone {
+		width:70%;
+		left: 30%;
+	}
+	
+	.iphone img {
+		margin-top:0;
+		margin-bottom:0;
+		width:110%
+	}	
+	.main_txt a {
+		font-size: 100px;
+		line-height: 0;
+	}
+	.hh {
+		line-height: 170px;
+		font-size:150px;
+	}
+	
+	.hhh {
+		line-height: 200px;
+		font-size: 200px;
+	}
+	
+	.txt1 {
+		top: 40%;
+		font-size: 280%;
+	}
+	.menu ul{
+		margin-top: 5%;
+
+	}
+	.menu img {
+		width:10%;
+	}
+	.buttons  {
+		width:30%;
+		margin-top: 4%;
+}
+	.buttons img {
+		height: 150%;
+	}
+	.txt2 {
+		margin-left: -17%;
+		margin-right: 0;
+		font-size: 240%;
+		line-height: 140%;
+	}
+	
+	.burger_links {
+		width: 90%;
+	}
+	.menu li > ul {
+		top: 60px; /*відступ зверху від батьківського елементу*/
+	}
+
+	.menu li:hover > ul {
+		width: 250px; /*Задаємо ширину випадаючого меню*/ 
+	}
+	.buttons a {
+		font-size: 40px;
+	}
+}

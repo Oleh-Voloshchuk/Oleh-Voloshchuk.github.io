@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href=reg.css>
+	<title>AppleStore</title> 
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="page">
+	<header>
+	<nav class="menu">
+		<a href="index.html"><img id="logo" src="apple1.svg"></a>
+	
+		<ul>
+			<li class="txt"><a class="txt1" href="About.html">About</a></li>
+			<li class="txt"><a class="txt1" href="#">specification</a></li>
+			<li class="txt"><a class="txt1" href="#">support</a></li>
+			<li class="txt"><a class="txt1" href="#">products</a></li>
+			<div class="themeButton">
+				<div class="checkTheme"></div>
+			</div>
+		</ul>
+		
+	</nav>
+	
+			
+	<div class="buttons">
+		<a href=#><img src="loupe.png"></a>
+		<a href=# class="sign">sign up</a>
+		<a href=# class="sign">sign in</a>
+	</div>
+	</header>
+<form action="action_page.php">
+  <div class="container">
+	<div class="con">
+		<h1>Register</h1>
+		<p>Please fill in this form to create an account.</p>
+	</div>
+    <hr>
+	<div class="con">
+		<input type="text" placeholder="Enter Name" name="name" class="name" required>
+		<label for="fname"><b>Name</b></label>
+	  
+		<input type="text" maxlength="30" size="40" pattern="^[A-Za-z0-9@.]+$" value="" placeholder="Enter Email" name="email" required title="Це поле може містити тільки латинські літери,цифри, крапку та '@' ">
+		<label for="email"><b>Email</b></label>	
+
+
+		<input type="password" placeholder="Enter Password" name="psw" class="psw" required>
+		<label for="psw"><b>Password</b></label>
+
+		<input type="password" placeholder="Repeat Password" class="psw" name="psw-repeat" required>
+		<label for="psw-repeat"><b>Repeat Password</b></br></label>
+		
+		<label for="cars"><b class="country"><b>Choose a country:</b></br></label>
+		<select name="cars" id="cars" form="carform">
+			<option value="Ukraine">Ukraine</option>
+			<option value="England">England</option>
+			<option value="USA">USA</option>
+			<option value="China">China</option>
+			<option value="Poland">Poland</option>
+		</select>
+	</div>
+	<hr>
+    <div class="con">
+		<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    </div>
+	<button type="submit" class="registerbtn">Register</button>
+  </div>
+
+  <div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+  </div>
+</form>
+	<script type="text/javascript" src="password.js"></script>
+	<script src="theme.js"></script>
+</body>
+</html>
